@@ -85,7 +85,7 @@ export default function Vehicles() {
                 key={filter}
                 variant={selectedFilter === filter ? "solid" : "bordered"}
                 color={selectedFilter === filter ? "warning" : "default"}
-                onClick={() => setSelectedFilter(filter)}
+                onPress={() => setSelectedFilter(filter)}
                 className="font-medium"
               >
                 {filter}
@@ -121,7 +121,7 @@ export default function Vehicles() {
 
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold text-orange-600">{vehicle.price}</span>
-                  <Button color="warning" variant="solid" className="font-semibold">
+                  <Button color="warning" variant="solid" className="font-semibold" onPress={() => {}}>
                     Get Quote
                   </Button>
                 </div>

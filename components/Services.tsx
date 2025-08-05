@@ -72,7 +72,14 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                <Button as={Link} href="/booking" color="warning" variant="solid" className="w-full font-semibold">
+                <Button
+                  as={Link}
+                  href="/booking"
+                  color="warning"
+                  variant="solid"
+                  className="w-full font-semibold"
+                  onPress={() => console.log("Book Now pressed")}
+                >
                   Book Now
                 </Button>
               </CardBody>
