@@ -31,7 +31,7 @@ export default function Testimonials() {
     {
       name: "David Chen",
       location: "Singapore",
-      avatar: "/placeholder.svg?height=80&width=80&text=DC",
+      avatar: "/chen.jpg",
       rating: 5,
       text: "Excellent corporate travel service. They handled all our transportation needs for the conference seamlessly. Professional drivers and luxury vehicles.",
       trip: "Corporate Travel",

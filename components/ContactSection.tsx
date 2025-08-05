@@ -190,16 +190,21 @@ export default function ContactSection() {
           </Card>
         </div>
 
-        <div className="mt-16">
-          <div className="bg-gray-100 rounded-lg p-4 h-64 flex items-center justify-center">
-            <div className="text-center text-gray-600">
-              <span className="text-4xl mb-4 block">🗺️</span>
-              <p className="text-lg font-medium">Interactive Map</p>
-              <p className="text-sm">Google Maps integration would be embedded here</p>
-              <p className="text-sm mt-2">Location: Westlands, Nairobi, Kenya</p>
-            </div>
-          </div>
-        </div>
+                <div className="mt-8">
+                  <h3 className="text-xl font-bold text-red-800 mb-4">Our Location</h3>
+                  <div className="aspect-video relative rounded-lg overflow-hidden border border-red-200">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d127642.85009570113!2d36.70985642590741!3d-1.2694564875703658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x182f1737ef4da2a5%3A0x5d20e0b7035bd71e!2sBaraza%20Media%20Lab%202nd%20floor%2C%20Keystone%20Park%20at%2095%20Riverside!3m2!1d-1.2694577999999999!2d36.7922584!5e0!3m2!1sen!2ske!4v1754424094694!5m2!1sen!2ske"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="absolute inset-0"
+                    ></iframe>
+                  </div>
+                </div>
       </div>
     </section>
   )

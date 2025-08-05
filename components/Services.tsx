@@ -9,37 +9,37 @@ export default function Services() {
     {
       title: "Safari Tours",
       description: "Experience Kenya's wildlife in Maasai Mara, Amboseli, and Tsavo National Parks with expert guides.",
-      image: "/placeholder.svg?height=300&width=400&text=Safari+Wildlife+Tour",
+      image: "/safari1.jpg",
       features: ["Professional Guide", "Game Drives", "Photography Support", "Lunch Included"],
     },
     {
       title: "Airport Transfers",
       description: "Reliable and comfortable transfers to and from Jomo Kenyatta International Airport.",
-      image: "/placeholder.svg?height=300&width=400&text=Airport+Transfer+Service",
+      image: "/safari2.jpg",
       features: ["24/7 Service", "Flight Tracking", "Meet & Greet", "Fixed Rates"],
     },
     {
       title: "City Tours",
       description: "Discover Nairobi's rich culture, history, and modern attractions with our guided city tours.",
-      image: "/placeholder.svg?height=300&width=400&text=Nairobi+City+Tour",
+      image: "/safari3.jpg",
       features: ["Cultural Sites", "Historical Tours", "Shopping Centers", "Local Cuisine"],
     },
     {
       title: "Car Rentals",
       description: "Rent from our fleet of well-maintained vehicles for your personal or business needs.",
-      image: "/placeholder.svg?height=300&width=400&text=Car+Rental+Fleet",
+      image: "/car-rental.jpg",
       features: ["Insurance Included", "GPS Navigation", "Fuel Efficient", "Flexible Terms"],
     },
     {
       title: "Corporate Travel",
       description: "Professional transportation solutions for business meetings, conferences, and events.",
-      image: "/placeholder.svg?height=300&width=400&text=Corporate+Travel+Service",
+      image: "/corporate-travel.jpg",
       features: ["Executive Vehicles", "Professional Drivers", "Flexible Scheduling", "Corporate Rates"],
     },
     {
       title: "Mountain Hikes",
       description: "Guided hiking adventures to Mount Kenya, Aberdares, and other scenic mountain ranges.",
-      image: "/placeholder.svg?height=300&width=400&text=Mountain+Hiking+Adventure",
+      image: "/mountain-hikes.jpg",
       features: ["Experienced Guides", "Safety Equipment", "Camping Gear", "Route Planning"],
     },
   ]
