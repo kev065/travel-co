@@ -1,0 +1,122 @@
+"use client"
+
+import { Card, CardBody, Avatar } from "@nextui-org/react"
+
+export default function Testimonials() {
+  const testimonials = [
+    {
+      name: "Sarah Johnson",
+      location: "United States",
+      avatar: "/placeholder.svg?height=80&width=80&text=SJ",
+      rating: 5,
+      text: "Our safari experience with Nairobi Explorer was absolutely incredible! The guide was knowledgeable, the vehicle was comfortable, and we saw all the Big Five. Highly recommended!",
+      trip: "Maasai Mara Safari",
+    },
+    {
+      name: "James Mitchell",
+      location: "United Kingdom",
+      avatar: "/placeholder.svg?height=80&width=80&text=JM",
+      rating: 5,
+      text: "Professional service from start to finish. The airport transfer was punctual, and the city tour showed us the best of Nairobi. Will definitely use their services again.",
+      trip: "Airport Transfer & City Tour",
+    },
+    {
+      name: "Maria Rodriguez",
+      location: "Spain",
+      avatar: "/placeholder.svg?height=80&width=80&text=MR",
+      rating: 5,
+      text: "The Mount Kenya hiking expedition was challenging but rewarding. Our guide ensured our safety throughout, and the views were breathtaking. An unforgettable experience!",
+      trip: "Mount Kenya Hiking",
+    },
+    {
+      name: "David Chen",
+      location: "Singapore",
+      avatar: "/placeholder.svg?height=80&width=80&text=DC",
+      rating: 5,
+      text: "Excellent corporate travel service. They handled all our transportation needs for the conference seamlessly. Professional drivers and luxury vehicles.",
+      trip: "Corporate Travel",
+    },
+    {
+      name: "Emma Thompson",
+      location: "Australia",
+      avatar: "/placeholder.svg?height=80&width=80&text=ET",
+      rating: 5,
+      text: "The car rental service was fantastic. Clean, well-maintained vehicle with GPS and all amenities. Made our self-drive safari adventure perfect!",
+      trip: "Car Rental Service",
+    },
+    {
+      name: "Ahmed Hassan",
+      location: "UAE",
+      avatar: "/placeholder.svg?height=80&width=80&text=AH",
+      rating: 5,
+      text: "Outstanding service! The team went above and beyond to customize our family safari. The kids loved every moment, and we felt safe throughout the journey.",
+      trip: "Family Safari Package",
+    },
+  ]
+
+  return (
+    <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">What Our Travelers Say</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Don't just take our word for it. Here's what our satisfied customers have to say about their experiences
+            with Nairobi Explorer.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
+              <CardBody className="p-6">
+                <div className="flex items-center mb-4">
+                  <Avatar src={testimonial.avatar} name={testimonial.name} size="lg" className="mr-4" />
+                  <div>
+                    <h4 className="font-bold text-gray-800">{testimonial.name}</h4>
+                    <p className="text-sm text-gray-600">{testimonial.location}</p>
+                    <div className="flex mt-1">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <span key={i} className="text-yellow-400 text-sm">
+                          ★
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
+
+                <div className="bg-orange-100 rounded-lg p-3">
+                  <p className="text-sm font-semibold text-orange-800">Trip: {testimonial.trip}</p>
+                </div>
+              </CardBody>
+            </Card>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">Join Our Happy Travelers</h3>
+            <p className="text-gray-600 mb-6">
+              Over 500+ satisfied customers have experienced Kenya with us. Your adventure awaits!
+            </p>
+            <div className="flex justify-center space-x-8 text-center">
+              <div>
+                <div className="text-3xl font-bold text-orange-600">500+</div>
+                <div className="text-sm text-gray-600">Happy Customers</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-orange-600">4.9</div>
+                <div className="text-sm text-gray-600">Average Rating</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-orange-600">98%</div>
+                <div className="text-sm text-gray-600">Satisfaction Rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
