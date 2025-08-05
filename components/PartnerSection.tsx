@@ -83,7 +83,6 @@ export default function PartnerSection() {
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <Input
-                  label="Company Name"
                   placeholder="Your company name"
                   value={partnerForm.companyName}
                   onChange={(e) => handleInputChange("companyName", e.target.value)}
@@ -91,8 +90,7 @@ export default function PartnerSection() {
                 />
 
                 <Input
-                  label="Contact Person"
-                  placeholder="Full name"
+                  placeholder="contact person"
                   value={partnerForm.contactPerson}
                   onChange={(e) => handleInputChange("contactPerson", e.target.value)}
                   required
@@ -100,17 +98,13 @@ export default function PartnerSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
-                    type="email"
-                    label="Email Address"
-                    placeholder="your@email.com"
+                    placeholder="Email address"
                     value={partnerForm.email}
                     onChange={(e) => handleInputChange("email", e.target.value)}
                     required
                   />
                   <Input
-                    type="tel"
-                    label="Phone Number"
-                    placeholder="+254 700 000 000"
+                    placeholder="Phone Number"
                     value={partnerForm.phone}
                     onChange={(e) => handleInputChange("phone", e.target.value)}
                     required
@@ -137,8 +131,7 @@ export default function PartnerSection() {
                   </div>
 
                   <Input
-                    label="Fleet Size"
-                    placeholder="Number of vehicles"
+                    placeholder="fleet size"
                     value={partnerForm.fleetSize}
                     onChange={(e) => handleInputChange("fleetSize", e.target.value)}
                     required
@@ -146,7 +139,6 @@ export default function PartnerSection() {
                 </div>
 
                 <Textarea
-                  label="Tell us about your business"
                   placeholder="Brief description of your services, experience, and what you can offer..."
                   value={partnerForm.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}

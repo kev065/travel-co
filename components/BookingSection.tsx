@@ -27,7 +27,6 @@ export default function BookingSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log("Booking submitted:", formData)
-    // Handle form submission
   }
 
   return (
@@ -46,33 +45,37 @@ export default function BookingSection() {
             <CardBody className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Input
-                    type="date"
-                    label="Pickup Date"
-                    value={formData.pickupDate}
-                    onChange={(e) => handleInputChange("pickupDate", e.target.value)}
-                    required
-                  />
-                  <Input
-                    type="date"
-                    label="Return Date"
-                    value={formData.returnDate}
-                    onChange={(e) => handleInputChange("returnDate", e.target.value)}
-                    required
-                  />
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Pickup Date</label>
+                    <Input
+                      type="date"
+                      value={formData.pickupDate}
+                      onChange={(e) => handleInputChange("pickupDate", e.target.value)}
+                      required
+                      className="w-full"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Return Date</label>
+                    <Input
+                      type="date"
+                      value={formData.returnDate}
+                      onChange={(e) => handleInputChange("returnDate", e.target.value)}
+                      required
+                      className="w-full"
+                    />
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <Input
-                    label="Pickup Location"
-                    placeholder="e.g., JKIA Airport, Hotel name"
+                    placeholder="Pickup Location"
                     value={formData.pickupLocation}
                     onChange={(e) => handleInputChange("pickupLocation", e.target.value)}
                     required
                   />
                   <Input
-                    label="Drop-off Location"
-                    placeholder="e.g., Maasai Mara, City Center"
+                    placeholder="Drop-off Location"
                     value={formData.dropoffLocation}
                     onChange={(e) => handleInputChange("dropoffLocation", e.target.value)}
                     required
@@ -116,8 +119,7 @@ export default function BookingSection() {
 
                   <Input
                     type="number"
-                    label="Number of Passengers"
-                    placeholder="1-14"
+                    placeholder="Number of Passengers"
                     min="1"
                     max="14"
                     value={formData.passengers}
@@ -127,8 +129,7 @@ export default function BookingSection() {
                 </div>
 
                 <Textarea
-                  label="Special Requests or Additional Information"
-                  placeholder="Any special requirements, dietary restrictions, or additional services needed..."
+                  placeholder="Special Requests or Additional Information"
                   value={formData.specialRequests}
                   onChange={(e) => handleInputChange("specialRequests", e.target.value)}
                   minRows={3}

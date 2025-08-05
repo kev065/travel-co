@@ -140,7 +140,6 @@ export default function ContactSection() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
-                    label="Full Name"
                     placeholder="Your full name"
                     value={contactForm.name}
                     onChange={(e) => handleInputChange("name", e.target.value)}
@@ -148,7 +147,6 @@ export default function ContactSection() {
                   />
                   <Input
                     type="email"
-                    label="Email Address"
                     placeholder="your@email.com"
                     value={contactForm.email}
                     onChange={(e) => handleInputChange("email", e.target.value)}
@@ -159,14 +157,12 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
                     type="tel"
-                    label="Phone Number"
                     placeholder="+254 700 000 000"
                     value={contactForm.phone}
                     onChange={(e) => handleInputChange("phone", e.target.value)}
                   />
                   <Input
-                    label="Subject"
-                    placeholder="What is this about?"
+                    placeholder="subject"
                     value={contactForm.subject}
                     onChange={(e) => handleInputChange("subject", e.target.value)}
                     required
@@ -174,7 +170,6 @@ export default function ContactSection() {
                 </div>
 
                 <Textarea
-                  label="Message"
                   placeholder="Tell us how we can help you..."
                   value={contactForm.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}
