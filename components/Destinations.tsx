@@ -9,7 +9,7 @@ export default function Destinations() {
     {
       name: "Maasai Mara",
       description: "Witness the Great Migration and experience Kenya's most famous wildlife reserve.",
-      image: "/placeholder.svg?height=400&width=600&text=Maasai+Mara+Wildlife",
+      image: "/mara.jpg",
       highlights: ["Great Migration", "Big Five", "Maasai Culture", "Hot Air Balloons"],
       duration: "3-5 Days",
       price: "From $450",
@@ -17,7 +17,7 @@ export default function Destinations() {
     {
       name: "Amboseli National Park",
       description: "Get up close with elephants against the backdrop of Mount Kilimanjaro.",
-      image: "/placeholder.svg?height=400&width=600&text=Amboseli+Elephants+Kilimanjaro",
+      image: "/amboseli.jpg",
       highlights: ["Elephant Herds", "Mt. Kilimanjaro Views", "Maasai Villages", "Bird Watching"],
       duration: "2-3 Days",
       price: "From $320",
@@ -25,7 +25,7 @@ export default function Destinations() {
     {
       name: "Tsavo National Parks",
       description: "Explore Kenya's largest national park, famous for red elephants and diverse wildlife.",
-      image: "/placeholder.svg?height=400&width=600&text=Tsavo+Red+Elephants",
+      image: "/tsavo.jpg",
       highlights: ["Red Elephants", "Mzima Springs", "Rock Climbing", "Diverse Landscapes"],
       duration: "2-4 Days",
       price: "From $280",
@@ -33,7 +33,7 @@ export default function Destinations() {
     {
       name: "Lake Nakuru",
       description: "Famous for flamingos and rhino sanctuary in the heart of the Rift Valley.",
-      image: "/placeholder.svg?height=400&width=600&text=Lake+Nakuru+Flamingos",
+      image: "/lake-nakuru.jpg",
       highlights: ["Flamingo Flocks", "Rhino Sanctuary", "Rift Valley Views", "Bird Paradise"],
       duration: "1-2 Days",
       price: "From $180",
@@ -41,7 +41,7 @@ export default function Destinations() {
     {
       name: "Mount Kenya",
       description: "Africa's second-highest peak offering incredible hiking and climbing experiences.",
-      image: "/placeholder.svg?height=400&width=600&text=Mount+Kenya+Peak",
+      image: "/mount-kenya.jpg",
       highlights: ["Mountain Climbing", "Alpine Lakes", "Unique Flora", "Adventure Sports"],
       duration: "4-7 Days",
       price: "From $650",
@@ -49,7 +49,7 @@ export default function Destinations() {
     {
       name: "Diani Beach",
       description: "Pristine white sand beaches and crystal-clear waters on Kenya's coast.",
-      image: "/placeholder.svg?height=400&width=600&text=Diani+Beach+Coast",
+      image: "/diani.jpg",
       highlights: ["White Sand Beaches", "Water Sports", "Coral Reefs", "Beach Resorts"],
       duration: "3-7 Days",
       price: "From $200",

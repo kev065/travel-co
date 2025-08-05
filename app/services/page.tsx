@@ -16,7 +16,7 @@ export default function ServicesPage() {
       title: "Safari Tours",
       description:
         "Experience Kenya's incredible wildlife with our expertly guided safari tours to world-famous national parks and reserves.",
-      image: "/placeholder.svg?height=400&width=600&text=Safari+Tour+Experience",
+      image: "/safari1.jpg",
       features: [
         "Professional wildlife guides",
         "Comfortable 4x4 safari vehicles",
@@ -35,7 +35,7 @@ export default function ServicesPage() {
       title: "Airport Transfers",
       description:
         "Reliable, comfortable, and punctual airport transfer services available 24/7 for all major airports in Kenya.",
-      image: "/placeholder.svg?height=400&width=600&text=Airport+Transfer+Service",
+      image: "/safari2.jpg",
       features: [
         "24/7 availability",
         "Flight tracking system",
@@ -54,7 +54,7 @@ export default function ServicesPage() {
       title: "City Tours",
       description:
         "Discover Nairobi's rich history, vibrant culture, and modern attractions with our comprehensive city tour packages.",
-      image: "/placeholder.svg?height=400&width=600&text=Nairobi+City+Tour",
+      image: "/safari3.jpg",
       features: [
         "Expert local guides",
         "Historical site visits",
